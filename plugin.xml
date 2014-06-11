@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<plugin xmlns="http://cordova.apache.org/ns/plugins/1.0"
+           id="com.bluefletch.spectralink"
+      version="0.1.0">
+    <name>SpectraLink Cordova Plugin</name>
+   
+    <js-module src="www/barcodescanner.js" name="SpectralinkBarcode">
+        <clobbers target="spectralinkBarcode" />
+    </js-module>
+
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="SpectralinkBarcode" >
+                <param name="android-package" value="com.bluefletch.spectralink.plugin.SpectralinkCordovaPlugin"/>
+            </feature>
+        </config-file>
+        <source-file src="lib/android/com/bluefletch/spectralink/BarcodeListenerProxy.java" target-dir="src/com/bluefletch/spectralink" />
+        <source-file src="lib/android/com/bluefletch/spectralink/ScanCallback.java" target-dir="src/com/bluefletch/spectralink" />
+        <source-file src="lib/android/com/bluefletch/spectralink/BarcodeScanner.java" target-dir="src/com/bluefletch/spectralink" />
+        <source-file src="src/android/com/bluefletch/spectralink/plugin/SpectralinkCordovaPlugin.java" target-dir="src/com/bluefletch/spectralink/plugin" />
+    </platform>
+
+</plugin>
+
+
