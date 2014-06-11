@@ -5,7 +5,7 @@ This is a Cordova/Phonegap plugin to interact with the Spectralink ruggedized de
 
 =============
 
-This plugin is compatible with plugman.  To install, run the following from your project command line: 
+This plugin is compatible with plugman.  To install, run the following from your project command line: <br/>
 ```$ cordova plugin add https://github.com/BlueFletch/spectralink-cordova.git```
 
 
