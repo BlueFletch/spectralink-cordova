@@ -12,7 +12,9 @@ This plugin is compatible with plugman.  To install, run the following from your
 ==============
 
 <h3>To Use:</h3>
-You'll register a callback which will be called when a successful "scan" event occurs.
+You'll register a callback which will be called when a successful "scan" event occurs. 
+
+NOTE: this plugin uses reflection to read the added Spectralink APIs to core Android at runtime.  This means you do NOT need to compile your project against a different version of Android.
 
 ```
 function readBarcode(barcode) {
