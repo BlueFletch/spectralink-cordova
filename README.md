@@ -1,9 +1,6 @@
 Cordova Spectralink Plugin
 ===================
 
-Cordova Plugin to run the barcode scanner for the SpectraLink devices running 1.1.0+
-============
-
 This is a Cordova/Phonegap plugin to interact with the Spectralink ruggedized devices' Barcode Scanners.  It has been tested on an 8753.
 
 =============
